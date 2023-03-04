@@ -1,0 +1,189 @@
+<!--
+Template Name: Bitcoin Trade
+Title: Bitcoin Trade - one page bootstrap website template bitcion website
+Description: Bitcoin Trade a one page bootstrap website template suitable for creating your next bitcoin website.
+Keyword: Bitcoin Trade bootstrap website template, one page bootstrap website template, cryptocurrency bootstrap website templates, bitcoin price bootstrap website template, bitcoin kurs bootstrap website template
+Author URI: https://bootstrapwebtemplates.com/
+Tags: bitcoin, bitcoin price, bitcoin kurs, onecoin, bitcoin mining, localbitcoins, ethereum, btc e, litecoin, free bitcoin, blockchain, coinbase, btc to usd, bitcoin miner, cryptocurrency, bitcoin wallet, bitcoin value, one page, onepage
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Bootstrap Website Templates">
+
+    <title>Bitcoin Trade - one page bootstrap website template</title>
+ {% load static %}
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/simple-line-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery.lightbox.min.css' %}">
+
+    <!-- Theme CSS -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color:white;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+
+</head>
+
+<body id="page-top">
+
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <h2 style="color:white;">A Research On Bitcoin Price Prediction Using Machine Learning Algorithms</h2>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="{% url 'user_index' %}">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'knn' %}">KNN Algorithm</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="{% url 'svm' %}">SVM Algorithm</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'user_login' %}">User</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+<!--about-->
+
+<!--//about-->
+
+<!--Buy Rate-->
+
+<!--//Buy Rate-->
+
+<!--Sell Rate-->
+
+<!--//Sell Rate-->
+
+<!--contact-->
+
+<section id="contact" class="bwt-contact text-left">
+<div class="container text-center">
+
+<hr>
+<div class="row">
+   <h1 style="color:white;">Bitcoin Price Details</h1><br>
+    <table id="customers" style="overflow:scroll;">
+        <thead>
+        <tr class="warning">
+
+            <th>Date</th>
+             <th>Open</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Close</th>
+            <th>Volume</th>
+
+
+
+
+        </tr>
+        </thead>
+        {% for obj in bitcoin_price %}
+
+       <tbody>
+        <tr>
+            <td>{{obj.date1}}</td>
+            <td>{{obj.open}}</td>
+            <td>{{obj.high}}</td>
+            <td>{{obj.low}}</td>
+            <td>{{obj.close}}</td>
+            <td>{{obj.volume}}</td>
+
+
+
+                 </tr>
+       </tbody>
+        {% endfor %}
+    </table>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<div class="bwt-footer-copyright">
+<div class="container">
+<div class="row">
+
+<div class="left-text" style="text-align:center;">A Research On Bitcoin Price Prediction Using Machine Learning Algorithms</div>
+
+
+</div>
+</div>
+</div>
+
+<!--//contact-->
+
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- Lightbox JavaScript-->
+    <script src="{% static 'js/jquery.lightbox.min.js' %}"></script>
+    <!-- Theme JavaScript -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
